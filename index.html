@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0f" />
+<meta name="description" content="Portfolio of Reyansh Babbar: Robotics, Drones & AI Engineer. ESP32 firmware, autonomous drones, TensorFlow detectors, full-stack web." />
+<title>Reyansh Babbar | Robotics, Drones & AI</title>
+
+<!-- Social sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Reyansh Babbar | Robotics, Drones &amp; AI" />
+<meta property="og:description" content="I build things that fly, sense, and learn: ESP32 flight controllers, edge object detection, IoT and full-stack web." />
+<meta property="og:image" content="assets/img/projects/reyfc11.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='6' fill='%23080a0f'/%3E%3Ccircle cx='20' cy='20' r='12' fill='none' stroke='%2329d7e6' stroke-width='2.4'/%3E%3Cpath d='M20 3v8M20 29v8M3 20h8M29 20h8' stroke='%2329d7e6' stroke-width='2.4'/%3E%3Ccircle cx='20' cy='20' r='3' fill='%23ff3b64'/%3E%3C/svg%3E" />
+<link rel="preload" as="image" href="assets/video/poster.jpg?v=3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Reyansh Babbar","jobTitle":"Robotics, Drones & AI Engineer","email":"mailto:reyanshbabbar0702@gmail.com","sameAs":["https://github.com/reythegreat07"],"knowsAbout":["Robotics","Drones","ArduPilot","ESP32","TensorFlow","Computer Vision","Embedded Systems"]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css?v=8" />
+<link rel="stylesheet" href="css/responsive.css?v=6" />
+</head>
+<body>
+
+<!-- ============== SPLASH: SHOOT TO START ============== -->
+<div id="splash" class="vignette" aria-label="Click to enter site">
+  <video id="splash-video" poster="assets/video/poster.jpg?v=3" muted loop playsinline preload="auto" aria-hidden="true"></video>
+
+  <div id="splash-content">
+    <div id="splash-target" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle class="outer-ring" cx="50" cy="50" r="46" fill="none" stroke-width="0.6"/>
+        <circle class="mid-ring"   cx="50" cy="50" r="32" fill="none" stroke-width="0.8"/>
+        <circle class="inner-ring" cx="50" cy="50" r="18" fill="none" stroke-width="1.6"/>
+        <circle cx="50" cy="50" r="3" fill="#ff2e63"/>
+        <line class="cross-h" x1="2"  y1="50" x2="20" y2="50" stroke-width="1.2"/>
+        <line class="cross-h" x1="80" y1="50" x2="98" y2="50" stroke-width="1.2"/>
+        <line class="cross-v" x1="50" y1="2"  x2="50" y2="20" stroke-width="1.2"/>
+        <line class="cross-v" x1="50" y1="80" x2="50" y2="98" stroke-width="1.2"/>
+      </svg>
+    </div>
+    <p id="splash-text" role="presentation">SHOOT TO START</p>
+    <p id="splash-subtext">click anywhere // or press space</p>
+  </div>
+</div>
+
+<a class="skip-link" href="#projects">Skip to projects</a>
+
+<!-- ============== MUTE TOGGLE ============== -->
+<button id="mute-toggle" type="button" aria-label="Toggle music">
+  <svg id="mute-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"></svg>
+</button>
+
+<!-- ============== MAIN PAGE ============== -->
+<video id="bg-video" poster="assets/video/poster.jpg?v=3" muted loop playsinline preload="auto" aria-hidden="true"></video>
+
+<main id="main">
+
+  <div id="horizontal-viewport">
+    <div id="horizontal-track">
+
+  <!-- HERO -->
+  <section id="hero" class="section horizontal-slide">
+    <div class="hero-inner">
+      <span class="hero-tag">// portfolio.exe loaded</span>
+      <h1 class="hero-name" id="hero-name">REYANSH BABBAR</h1>
+      <div class="hero-title" id="hero-title">Robotics, Drones &amp; AI Engineer</div>
+      <p class="hero-tagline" id="hero-tagline">I build things that fly, sense, and learn.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="hero-cta">View Work</a>
+        <a href="#socials" class="hero-cta hero-cta-alt">Get in Touch</a>
+      </div>
+      <ul class="hero-focus" aria-label="Focus areas">
+        <li>Robotics</li><li>Drones</li><li>Machine Learning</li><li>Embedded Systems</li>
+      </ul>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section horizontal-slide">
+    <span class="section-eyebrow">// 01 / about</span>
+    <h2 class="section-title">Who I <span>Am</span></h2>
+    <div class="section-rule"></div>
+    <p class="section-intro" id="about-bio"></p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section horizontal-slide">
+    <span class="section-eyebrow">// 02 / capabilities</span>
+    <h2 class="section-title">Tech <span>Stack</span></h2>
+    <div class="section-rule"></div>
+    <p class="section-intro">Embedded firmware, autonomous flight, computer vision, and full-stack web: the layers I work across daily.</p>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section horizontal-slide">
+    <span class="section-eyebrow">// 03 / selected work</span>
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="section-rule"></div>
+    <p class="section-intro">A look at what I've shipped across embedded, AI, and full-stack work.</p>
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
+
+  <!-- SOCIALS / CONTACT -->
+  <section id="socials" class="section horizontal-slide">
+    <span class="section-eyebrow">// 04 / connect</span>
+    <h2 class="section-title">Find Me <span>Here</span></h2>
+    <div class="section-rule"></div>
+    <div class="socials-row" id="socials-row"></div>
+    <p class="contact-line">
+      Or drop a line: <a id="email-link" href="#">reyanshbabbar0702@gmail.com</a>
+    </p>
+    <footer class="site-footer">
+    Built by <span class="accent" id="brand-name">Reyansh</span> &middot; <span id="brand-title">Engineer</span> &middot; &copy; <span id="year"></span>
+  </footer>
+  </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- ============== MODAL ============== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-inner">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <div class="modal-eyebrow" id="modal-eyebrow">PROJECT</div>
+    <h3 class="modal-title" id="modal-title"></h3>
+    <p class="modal-desc" id="modal-desc"></p>
+    <div class="modal-section-label">Tech</div>
+    <div class="modal-tech" id="modal-tech"></div>
+    <div class="modal-section-label">Highlights</div>
+    <ul class="modal-list" id="modal-list"></ul>
+    <div class="modal-actions">
+      <a id="modal-github" class="hero-cta" target="_blank" rel="noopener" href="#">View on GitHub</a>
+      <a id="modal-live" class="hero-cta hero-cta-alt" target="_blank" rel="noopener" href="#">Visit Live Site</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============== AUDIO ============== -->
+<audio id="bg-audio" loop preload="auto"></audio>
+
+<!-- ============== SCRIPTS ============== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/config.js?v=6"></script>
+<script src="js/cursor.js"></script>
+<script src="js/splash.js?v=3"></script>
+<script src="js/subnav.js?v=2"></script>
+<script src="js/projects.js?v=6"></script>
+<script src="js/main.js?v=3"></script>
+<script src="js/scroll.js?v=3"></script>
+<script src="js/anim.js?v=6"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
